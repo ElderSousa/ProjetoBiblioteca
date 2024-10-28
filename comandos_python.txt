@@ -1,0 +1,61 @@
+"""Criando o projeto:
+
+pip install Django==3.0.7
+python3 -m venv ./venv
+venv\Scripts\activate.bat
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser - autorização de execução de scripts
+pip install django
+django-admin startproject setup . 
+
+----------------------------------------------------
+projeto setup:
+
+settings.py ->
+LANGUAGE_CODE = 'pt-br'
+TIME_ZONE = 'America/Sao_Paulo'
+
+*Depois da instalação do djangorestframework e markdown 
+INSTALLED APPS
+'rest_framework',
+'escola' - Isso depois de já ter sido criado as models.
+
+
+------------------------------------------------------
+
+Instalar Django Restframework
+
+pip install djangorestframework
+python.exe -m pip install --upgrade pip
+pip install markdown
+
+-------------------------------------------------------
+
+Criar um app 
+
+python manage.py startapp escola
+
+------------------------------------------------------
+
+Criando migrations
+python manage.py makemigrations
+
+*Subir migrations para o banco
+python manage.py migrate
+
+*Reverter migrações no banco
+python manage.py migrate your_app_name zero
+
+------------------------------------------------------
+
+Criando super Usuário no Admin
+python manage.py createsuperuser
+
+------------------------------------------------------
+
+Executar a Api
+pyton manage.py runserver
+
+------------------------------------------------------
+
+
+"""
